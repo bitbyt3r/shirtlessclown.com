@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164741362-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-164741362-1');
+    </script>
+
+    <title>I'm not sure what to put here.</title>
+    <style>
+      .angle {
+        transform: rotate3d(1, 1, 1, 5.385427112deg);
+        display: block;
+        font-size: 80px;
+      }
+      .spin {
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition:         transform .8s ease-in-out;
+        display: inline-block;
+      }
+      .spin:hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+      #crossfade {
+        position: relative;
+        margin: 0 auto;
+      }
+      #crossfade img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      #crossfade img.top:hover {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <marquee><h1>The unofficial official site of Shirtlessclown</h1></marquee>
+    <div id="crossfade">
+      <img alt="fat man in chair" class="bottom" src="fixed2.jpg" width="35%"></img><br>
+      <img alt="fat man in chair, fully baked" class="top" src="shirtlessclown.jpg" width="35%"></img><br>
+    </div>
+    <a class="angle" href="https://www.youtube.com/channel/UC80G112HPt556aSpCo64krQ">
+      <span style="color: red" class="spin">I</span> 
+      <span style="color: orange" class="spin">guess</span> 
+      <span style="color: #999900" class="spin">there's</span> 
+      <span style="color: green" class="spin">a</span> 
+      <span style="color: blue" class="spin">youtube</span> 
+      <span style="color: violet" class="spin">thing.</span>
+    </a>
+  </body>
+</html>
